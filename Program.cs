@@ -1,6 +1,9 @@
-﻿/*################################## EJERCICIO 1 ################*/
+﻿using Practica_Mia.Datos;
 
+Datos a = new Datos();
+/*################################## EJERCICIO 1 ################*/
 
+Console.WriteLine(a.E1);
 
 
 

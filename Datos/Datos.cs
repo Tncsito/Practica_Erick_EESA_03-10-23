@@ -11,7 +11,16 @@ namespace Practica_Mia.Datos
         /*######### EJERCICIO 1 ################*/
         public int E1()
         {
-            int[] a = { 1, 2, 3, 4, 5, 6, 7, 8, };
+            int[] a;
+            a = new int[5];
+            int cont = 0;
+            while(cont < 5)
+            {
+                Console.WriteLine("Dame un valor numerico(5 veces): ");
+                a[cont] = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine(a[cont]);
+                cont++;
+            }
         }
 
 
