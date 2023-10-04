@@ -6,32 +6,46 @@ using System.Threading.Tasks;
 
 namespace Practica_Mia.Datos
 {
-    public class Datos
+    internal class Datos
     {
-        /*######### EJERCICIO 1 ################*/
-        public int E1()
+        /*######### EJERCICIO 1 ################
+        public int[] P1()
         {
-            int[] a;
-            a = new int[5];
-            int cont = 0;
-            while(cont < 5)
+            int[] a = { 5, 5, 5, 5, 5 };
+            return a;
+        }
+        public void P1_1(int[] a)
+        {
+            Console.WriteLine("Valores de los arreglos:");
+            for (int aa = 0; aa < a.Length; aa++)
             {
-                Console.WriteLine("Dame un valor numerico(5 veces): ");
-                a[cont] = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine(a[cont]);
-                cont++;
+                Console.WriteLine("Arreglo " + aa + ": " + a[aa]);
             }
         }
+        /*######### EJERCICIO 2 ################
+        public int[] P2()
+        {
+            int[] b = new int[5];
 
-
-
-
-
-
-
-
-        /*######### EJERCICIO 2 ################*/
-
+            for (int bb = 0; bb < 5; bb++)
+            {
+                Console.WriteLine("Dame un numero para el arreglo " + bb + ": ");
+                if (int.TryParse(Console.ReadLine(), out int r))
+                {
+                    b[bb] = r;
+                }
+            }
+            return b;
+        }
+        //#######################################
+        public void P2_2(int[] b)
+        {
+            Console.WriteLine("Valores de los arreglos:");
+            for (int bb = 0; bb < b.Length; bb++)
+            {
+                Console.WriteLine("Arreglo " + bb + ": " + b[bb]);
+            }
+        }
         /*######### EJERCICIO 3 ################*/
 
         /*######### EJERCICIO 4 ################*/
