@@ -46,7 +46,32 @@ namespace Practica_Mia.Datos
             }
         }
         /*######### EJERCICIO 3 ################*/
-        
+        public int[] P3()
+        {
+            int[] c = new int[10];
+
+            for (int cc = 0; cc < 10; cc++)
+            {
+                Console.WriteLine("Dame un numero para el arreglo " + cc + ": ");
+                if (int.TryParse(Console.ReadLine(), out int r))
+                {
+                    c[cc] = r;
+                }
+            }
+            return c;
+        }
+        public void P3_3(int[] c)
+        {
+            Console.WriteLine("Valores de los arreglos:");
+            for (int cc = 0; cc < c.Length; cc++)
+            {
+                Console.WriteLine("Arreglo " + cc + ": " + c[cc]);
+            }
+        }
+        public void P3_3_3()
+        {
+
+        }
         /*######### EJERCICIO 4 ################*/
 
         /*######### EJERCICIO 5 ################*/
