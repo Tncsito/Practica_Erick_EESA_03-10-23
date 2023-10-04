@@ -37,7 +37,6 @@ namespace Practica_Mia.Datos
             }
             return b;
         }
-        //#######################################
         public void P2_2(int[] b)
         {
             Console.WriteLine("Valores de los arreglos:");
@@ -47,7 +46,7 @@ namespace Practica_Mia.Datos
             }
         }
         /*######### EJERCICIO 3 ################*/
-
+        
         /*######### EJERCICIO 4 ################*/
 
         /*######### EJERCICIO 5 ################*/
