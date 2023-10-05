@@ -52,7 +52,7 @@ namespace Practica_Mia.Datos
 
             for (int cc = 0; cc < 10; cc++)
             {
-                Console.WriteLine("Dame un numero para el arreglo " + cc + ": ");
+                Console.WriteLine("Dame un numero para el arreglo " + (cc+1) + ": ");
                 if (int.TryParse(Console.ReadLine(), out int r))
                 {
                     c[cc] = r;
@@ -65,12 +65,16 @@ namespace Practica_Mia.Datos
             Console.WriteLine("Valores de los arreglos:");
             for (int cc = 0; cc < c.Length; cc++)
             {
-                Console.WriteLine("Arreglo " + cc + ": " + c[cc]);
+                Console.WriteLine("Arreglo " + (cc+1) + ": " + c[cc]);
             }
-        }
-        public void P3_3_3()
-        {
-
+            int sc = 0;
+            foreach (int bc in c)
+            {
+                sc += bc;
+            }
+            double mc = (double) sc / c.Length;
+            Console.WriteLine("\n--------------------------------");
+            Console.WriteLine($"\nLa media de los numeros es {mc}");
         }
         /*######### EJERCICIO 4 ################*/
 
