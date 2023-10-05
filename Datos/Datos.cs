@@ -45,7 +45,7 @@ namespace Practica_Mia.Datos
                 Console.WriteLine("Arreglo " + bb + ": " + b[bb]);
             }
         }
-        /*######### EJERCICIO 3 ################*/
+        /*######### EJERCICIO 3 ################
         public int[] P3()
         {
             int[] c = new int[10];
