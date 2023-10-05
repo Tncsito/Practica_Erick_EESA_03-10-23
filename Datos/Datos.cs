@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -77,7 +78,39 @@ namespace Practica_Mia.Datos
             Console.WriteLine($"\nLa media de los numeros es {mc}");
         }
         /*######### EJERCICIO 4 ################*/
+        public int[] P4(int[] d)
+        {
+            int cant = 0;
+                Console.Write("Dame cuantos arreglos haremos: ");
+                cant = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Bien!");
+                Console.WriteLine("Ahora, dame un multiplo para rellenar el arreglo: ");
+                if (int.TryParse(Console.ReadLine(), out int r))
+                {
+                    P4(new int[cant]);
+                }
+            return d;
+        }
+        public int[] P4_4(int cant, int r)
+        {
+            int[] d = new int[cant];
 
+            for (r = 0; r < cant; r++)
+            {
+                d[r] = (r + 1) * cant;
+            }
+
+            return d;
+        }
+
+        public void P4_4_4(int[] d)
+        {
+            Console.WriteLine("El arreglo:");
+            foreach (int elemento in d)
+            {
+                Console.WriteLine(elemento);
+            }
+        }
         /*######### EJERCICIO 5 ################*/
 
     }
