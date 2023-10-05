@@ -9,7 +9,7 @@ namespace Practica_Mia.Datos
 {
     internal class Datos
     {
-        /*######### EJERCICIO 1 ################
+        /*######### EJERCICIO 1 ################*/
         public int[] P1()
         {
             int[] a = { 5, 5, 5, 5, 5 };
@@ -23,7 +23,7 @@ namespace Practica_Mia.Datos
                 Console.WriteLine("Arreglo " + aa + ": " + a[aa]);
             }
         }
-        /*######### EJERCICIO 2 ################
+        /*######### EJERCICIO 2 ################*/
         public int[] P2()
         {
             int[] b = new int[5];
@@ -46,7 +46,7 @@ namespace Practica_Mia.Datos
                 Console.WriteLine("Arreglo " + bb + ": " + b[bb]);
             }
         }
-        /*######### EJERCICIO 3 ################
+        /*######### EJERCICIO 3 ################*/
         public int[] P3()
         {
             int[] c = new int[10];
@@ -77,7 +77,7 @@ namespace Practica_Mia.Datos
             Console.WriteLine("\n--------------------------------");
             Console.WriteLine($"\nLa media de los numeros es {mc}");
         }
-        /*######### EJERCICIO 4 ################*/
+        /*######### EJERCICIO 4 ################
         public int[] P4(int[] d)
         {
             int cant = 0;
@@ -112,6 +112,29 @@ namespace Practica_Mia.Datos
             }
         }
         /*######### EJERCICIO 5 ################*/
+        public string[] P5(int cant)
+        {
+            string[] e = new string[cant];
 
+            for (int i = 0; i < cant; i++)
+            {
+                Console.Write("Ingrese el nombre del arreglo " + (i + 1) + ": ");
+                e[i] = Console.ReadLine();
+            }
+
+            return e;
+        }
+
+        public int[] P5_5(string[] e)
+        {
+            int[] ee = new int[e.Length];
+
+            for (int i = 0; i < e.Length; i++)
+            {
+                ee[i] = e[i].Length;
+            }
+
+            return ee;
+        }
     }
 }
